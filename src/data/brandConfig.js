@@ -4,6 +4,8 @@ export const BRAND_CONFIG = {
   name: 'YouKnow Finance',
   shortName: 'YouKnow',
   handle: '@youkn_owfinance',
+  domain: 'https://youknowfinance.com',
+  canonicalUrl: 'https://youknowfinance.com/',
   tagline: 'Finance. Understood. Automated.',
   positioning: 'AI-Powered Financial Automation & Business Technology',
   description:

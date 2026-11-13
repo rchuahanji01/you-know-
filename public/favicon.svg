@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E172E" />
+      <stop offset="100%" stop-color="#060A14" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Rounded hex/squircle base -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="none" stroke="url(#glowGrad)" stroke-width="1" stroke-opacity="0.4"/>
+  
+  <!-- Geometric YK monogram -->
+  <!-- Y stem and arms -->
+  <path d="M14 14 L21 24 V34" stroke="url(#glowGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M28 14 L21 24" stroke="url(#glowGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- K diagonal strokes -->
+  <path d="M34 16 L25 25 L34 34" stroke="url(#glowGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Accent tech point -->
+  <circle cx="21" cy="24" r="2" fill="#00D2FF"/>
+</svg>
